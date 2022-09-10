@@ -30,6 +30,16 @@ CREATE TABLE `fitness_class` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `fitness_class`
+--
+
+LOCK TABLES `fitness_class` WRITE;
+/*!40000 ALTER TABLE `fitness_class` DISABLE KEYS */;
+INSERT INTO `fitness_class` VALUES ('Dancing','02:00:00','03:00:00'),('Boxing','03:00:00','04:00:00'),('Jiu Jitsu','04:00:00','07:00:00');
+/*!40000 ALTER TABLE `fitness_class` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `fitness_employee`
 --
 
@@ -44,6 +54,16 @@ CREATE TABLE `fitness_employee` (
   `salary` float DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_bin;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `fitness_employee`
+--
+
+LOCK TABLES `fitness_employee` WRITE;
+/*!40000 ALTER TABLE `fitness_employee` DISABLE KEYS */;
+INSERT INTO `fitness_employee` VALUES ('Gabriel','Santillo','Manager','2000-01-01',8000),('Natalia','Santillo','Teacher','2000-01-01',4000),('Daniel','Santillo','Cleaner','2000-01-01',2500),('Jose','Santillo','Teacher','2000-01-01',3500),('Damaris','Santillo','Cleaner','2000-01-01',3000);
+/*!40000 ALTER TABLE `fitness_employee` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `fitness_member`
@@ -61,6 +81,16 @@ CREATE TABLE `fitness_member` (
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
+-- Dumping data for table `fitness_member`
+--
+
+LOCK TABLES `fitness_member` WRITE;
+/*!40000 ALTER TABLE `fitness_member` DISABLE KEYS */;
+INSERT INTO `fitness_member` VALUES ('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium'),('Daniel','Gomes','2000-01-01','Premium');
+/*!40000 ALTER TABLE `fitness_member` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Dumping routines for database 'fitness_gym'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -73,4 +103,4 @@ CREATE TABLE `fitness_member` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-08 21:07:13
+-- Dump completed on 2022-09-10  9:24:13
